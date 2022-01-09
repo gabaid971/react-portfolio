@@ -1,0 +1,83 @@
+.contenthome li{
+    display: flex;
+}
+
+.contenthome{
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.show-nav .contenthome{
+    visibility: visible;
+}
+
+.homies {
+    padding-top: 40px;
+}
+
+.homies a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
+}
+
+.burger {
+    width: 40px;
+    height: 40px;
+    float:center;
+    border: none;
+    background: transparent;
+    transform: translateX(-13px);
+
+}
+.burger:hover {
+    cursor: pointer;
+}
+
+.burgerbar,
+.burgerbar::before,
+.burgerbar::after
+{
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.show-nav .burgerbar {
+    background: transparent;
+}
+
+.burgerbar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateY(12px);
+}
+
+.show-nav .burgerbar::before {
+    transform: rotate(45deg);
+}
+
+.burgerbar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateY(-12px);
+}
+
+.show-nav .burgerbar::after {
+    transform: rotate(-45deg);
+}
