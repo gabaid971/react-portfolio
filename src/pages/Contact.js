@@ -10,6 +10,7 @@ const Contact = () => {
             <Navigation/>
             <br/>
             <br/>
+            <div style={{paddingTop:'40px'}}>
             <h2>Get in touch</h2>
             <br/>
             <ContactForm/>
@@ -74,7 +75,8 @@ const Contact = () => {
                         </CopyToClipboard>
                     </div>
                 </div>
-            </div>           
+            </div>  
+            </div>         
         </div>
     );
 };
