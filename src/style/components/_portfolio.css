@@ -15,24 +15,34 @@
     transition: transform 300ms ease 100ms;
   }
 
-.robot{
+.item .logos {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 3vh; 
+    width: 3vw;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.robot {
+    background-image: url("/img/robot.png");
+}
+
+.gmm { 
     background-image: url("/img/gmm.png");
 }
 
-.gmm{
-    background-image: url("/img/gmm.png");
+.wind {
+    background-image: url("/img/windfarm.jpg");
 }
 
-.wind{
-    background-image: url("/img/gmm.png");
+.tictactoe {
+    background-image: url("/img/tictactoe.jpg");
 }
 
-.tictactoe{
-    background-image: url("/img/gmm.png");
-}
-
-.fingerprint{
-    background-image: url("/img/gmm.png");
+.fingerprint {
+    background-image: url("/img/fingerprint.png");
 }
 
 .container:hover .item {
