@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    padding: 0 55px;
+  }
+  
+  .item {
+    aspect-ratio: 1.6796;
+    border: solid;
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex: 0 0 19.547%;
+    text-align: center;
+    margin: 0 2px;
+    transition: transform 300ms ease 100ms;
+  }
+
+.robot{
+    background-image: url("/img/gmm.png");
+}
+
+.gmm{
+    background-image: url("/img/gmm.png");
+}
+
+.wind{
+    background-image: url("/img/gmm.png");
+}
+
+.tictactoe{
+    background-image: url("/img/gmm.png");
+}
+
+.fingerprint{
+    background-image: url("/img/gmm.png");
+}
+
+.container:hover .item {
+    transform: translateX(-25%);
+}
+ 
+.item:hover ~ .item {
+    transform: translateX(25%);
+ }
+
+.item:hover {
+    transform: scale(1.5) !important;
+}
