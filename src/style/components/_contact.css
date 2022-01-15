@@ -77,7 +77,8 @@ textarea {
   outline: none;
 }
 .button-hover:hover{
+  cursor: pointer;
   background: inherit;
-    color: #e9a30d;
-    border-bottom: 2px solid #e9a30d;
+  color: #e9a30d;
+  border-bottom: 2px solid #e9a30d;
 }
