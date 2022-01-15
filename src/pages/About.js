@@ -15,7 +15,7 @@ const About = () => {
                 <br/>
                 <h3> I let you discover my resume: </h3>
                 <div>
-                    <a href='./img/portfolio.pdf' target='_blank'> Dowload CV </a>
+                    <a href='./img/cv.pdf' target='_blank'> Dowload CV </a>
                 </div>
             </div>
         </div>
