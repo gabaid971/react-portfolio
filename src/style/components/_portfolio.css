@@ -55,4 +55,5 @@
 
 .item:hover {
     transform: scale(1.5) !important;
+    cursor: pointer;
 }
