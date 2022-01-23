@@ -1,6 +1,5 @@
 import React from 'react';
 import {useState} from 'react';
-import { CSSTransition } from 'react-transition-group';
 import Navigation from '../components/Navigation';
 import '../style/components/_portfolio.css';
 import Robot from './Projects/Robot'
