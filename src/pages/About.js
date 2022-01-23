@@ -1,7 +1,9 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import ReactGA from 'react-ga';
 
 const About = () => {
+    ReactGA.pageview(window.location.pathname);
     return (
         <div>
             <Navigation/>

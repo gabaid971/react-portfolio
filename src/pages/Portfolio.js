@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
+import { CSSTransition } from 'react-transition-group';
 import Navigation from '../components/Navigation';
 import '../style/components/_portfolio.css';
 import Robot from './Projects/Robot'
@@ -66,11 +67,11 @@ const Portfolio = () => {
                     <div className='item tictactoe' onClick={showtictactoe}></div>
                     <div className='item fingerprint' onClick={showfingerprint}></div>
                 </div>
-                {showRobot ? <Robot/>: null}
-                {showGmm ? <Gmm/>: null}
-                {showWind ? <Wind/>: null}
-                {showTictactoe ? <Tictactoe/>: null}
-                {showFingerprint ? <Fingerprint/>: null}
+                    {showRobot ? <Robot/>: null}
+                    {showGmm ? <Gmm/>: null}
+                    {showWind ? <Wind/>: null}
+                    {showTictactoe ? <Tictactoe/>: null}
+                    {showFingerprint ? <Fingerprint/>: null}
             </div>
         </div>
     );

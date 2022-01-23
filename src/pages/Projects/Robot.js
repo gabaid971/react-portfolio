@@ -6,7 +6,7 @@ const Robot = () => {
             <br/>
             <br/>
             <br/>
-            <h3 style={{color:"#e9a30d"}}>Situational motion planning of a mobile robot in uncertain logistics environment</h3>
+            <h3 style={{color:'#e9a30d'}}>Situational motion planning of a mobile robot in uncertain logistics environment</h3>
             <br/>
             <br/>
             <h4>This project focuses on the motion planning of a robot surrounded by humans,

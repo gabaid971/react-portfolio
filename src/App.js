@@ -4,6 +4,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-YJX74X49XQ');
 
 const App = () => {
   return (
