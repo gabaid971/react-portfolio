@@ -5,38 +5,38 @@ import '../style/components/_portfolio.css';
 import Robot from './Projects/Robot'
 import Gmm from './Projects/Gmm'
 import Wind from './Projects/Wind'
-import Tictactoe from './Projects/Tictactoe'
+import Riotstats from './Projects/Riotstats'
 import Fingerprint from './Projects/Fingerprint'
 
 const Portfolio = () => {
     const [showRobot, setShowRobot] = useState(false)
     const [showGmm, setShowGmm] = useState(false)
     const [showWind, setShowWind] = useState(false)
-    const [showTictactoe, setShowTictactoe] = useState(false)
+    const [showRiotstats, setShowRiotstats] = useState(false)
     const [showFingerprint, setShowFingerprint] = useState(false)
     const showrobot = () => {
         setShowRobot(!showRobot)
         setShowGmm(false)
         setShowWind(false)
-        setShowTictactoe(false)
+        setShowRiotstats(false)
         setShowFingerprint(false)
     }
     const showgmm = () => {
         setShowGmm(!showGmm)
         setShowRobot(false)
         setShowWind(false)
-        setShowTictactoe(false)
+        setShowRiotstats(false)
         setShowFingerprint(false)
     }
     const showwind = () => {
         setShowWind(!showWind)
         setShowRobot(false)
         setShowGmm(false)
-        setShowTictactoe(false)
+        setShowRiotstats(false)
         setShowFingerprint(false)
     }
-    const showtictactoe = () => {
-        setShowTictactoe(!showTictactoe)
+    const showriotstats = () => {
+        setShowRiotstats(!showRiotstats)
         setShowRobot(false)
         setShowGmm(false)
         setShowWind(false)
@@ -47,7 +47,7 @@ const Portfolio = () => {
         setShowRobot(false)
         setShowGmm(false)
         setShowWind(false)
-        setShowTictactoe(false)
+        setShowRiotstats(false)
     }
     return (
         <div>
@@ -63,13 +63,13 @@ const Portfolio = () => {
                     <button className='item robot' onClick={showrobot}></button>
                     <div className='item gmm' onClick={showgmm}></div>
                     <div className='item wind' onClick={showwind}></div>
-                    <div className='item tictactoe' onClick={showtictactoe}></div>
+                    <div className='item riotstats' onClick={showriotstats}></div>
                     <div className='item fingerprint' onClick={showfingerprint}></div>
                 </div>
                     {showRobot ? <Robot/>: null}
                     {showGmm ? <Gmm/>: null}
                     {showWind ? <Wind/>: null}
-                    {showTictactoe ? <Tictactoe/>: null}
+                    {showRiotstats ? <Riotstats/>: null}
                     {showFingerprint ? <Fingerprint/>: null}
             </div>
         </div>
